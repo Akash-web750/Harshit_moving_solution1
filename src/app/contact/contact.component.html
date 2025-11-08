@@ -1,0 +1,55 @@
+<section id="contact" class="py-5 contact-section">
+  <div class="container">
+    <h2 class="text-center display-5 fw-bold mb-5 text-white">Contact Us</h2>
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <div class="card shadow-sm border-0 p-4">
+          <h3 class="fw-bold mb-4">Send us a message</h3>
+          <form [formGroup]="contactForm" (ngSubmit)="sendContactForm()">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" formControlName="name" placeholder="Your Name">
+              <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched" class="text-danger">
+                Name is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" formControlName="email" placeholder="Your Email">
+              <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched" class="text-danger">
+                <span *ngIf="contactForm.get('email')?.errors?.required">Email is required.</span>
+                <span *ngIf="contactForm.get('email')?.errors?.email">Invalid email format.</span>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="mobile" class="form-label">Mobile</label>
+              <input type="text" class="form-control" id="mobile" formControlName="mobile" placeholder="Your Mobile Number">
+              <div *ngIf="contactForm.get('mobile')?.invalid && contactForm.get('mobile')?.touched" class="text-danger">
+                Mobile is required.
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" formControlName="message" rows="5" placeholder="Your Message"></textarea>
+              <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched" class="text-danger">
+                Message is required.
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send Message</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="contact-info text-white p-4 rounded shadow-sm">
+          <h3 class="fw-bold mb-4">Get in Touch</h3>
+          <p><i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, Chhatrapati Sambhajinagar</p>
+          <p><i class="fas fa-phone me-2"></i> +91 98765 43210</p>
+          <p><i class="fas fa-envelope me-2"></i> info&#64;harshitmovingsolutions.com</p>
+          <div class="mt-4">
+            <a href="https://wa.me/919876543210" target="_blank" class="btn btn-success btn-lg"><i class="fab fa-whatsapp me-2"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

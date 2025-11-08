@@ -1,0 +1,62 @@
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: var(--primary-color);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  transition: background-color 0.3s ease-in-out;
+  background-color: var(--background-color); /* Light gray when at top */
+}
+
+.navbar.scrolled {
+  background-color: #007bff; /* Blue when scrolled down */
+}
+
+.navbar-brand img {
+  height: 40px; /* Set a fixed height for visibility */
+  width: auto; /* Maintain aspect ratio */
+}
+
+.navbar-nav .nav-link {
+  font-family: var(--body-font);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  height: 40px; /* Match logo height */
+}
+
+.nav-link {
+  color: var(--text-dark-color) !important;
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+.nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.navbar.scrolled .nav-link {
+  color: var(--text-light-color) !important;
+}
+
+.navbar.scrolled .nav-link:hover {
+  color: var(--accent-color) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: var(--text-light-color);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-accent:hover {
+  background-color: darken(var(--accent-color), 10%);
+}

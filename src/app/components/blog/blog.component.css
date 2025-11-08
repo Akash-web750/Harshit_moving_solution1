@@ -1,0 +1,16 @@
+.blog-container {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f8f8; /* Light Gray */
+}
+
+.blog-container h1 {
+  color: #1E88E5; /* Blue */
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.blog-container p {
+  color: #333;
+  font-size: 1.2rem;
+}

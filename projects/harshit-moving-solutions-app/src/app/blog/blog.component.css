@@ -1,0 +1,17 @@
+.blog-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.blog-section .card-title {
+  color: var(--primary-color);
+}
+
+.blog-section .btn-link {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+.blog-section .btn-link:hover {
+  text-decoration: underline;
+}

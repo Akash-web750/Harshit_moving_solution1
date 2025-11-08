@@ -1,0 +1,17 @@
+:root {
+  --primary-color: #0056b3; /* A slightly darker, more professional blue */
+  --secondary-color: #6c757d; /* A neutral grey for secondary elements */
+  --accent-color: #e67e22; /* A more muted, professional orange */
+  --background-color: #f8f9fa; /* A very light grey for a clean background */
+  --text-dark-color: #212529; /* Darker text for better readability */
+  --text-light-color: #ffffff;
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Inter', sans-serif;
+}
+
+body {
+  font-family: var(--body-font);
+  background-color: var(--background-color);
+  color: var(--text-dark-color);
+  margin: 0;
+}
