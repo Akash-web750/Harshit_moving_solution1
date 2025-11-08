@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/harshit-moving-solutions-app",
+            "outputPath": "dist",
             "index": "projects/harshit-moving-solutions-app/src/index.html",
             "browser": "projects/harshit-moving-solutions-app/src/main.ts",
             "polyfills": [
