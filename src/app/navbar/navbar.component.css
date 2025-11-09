@@ -1,25 +1,21 @@
 .navbar {
   transition: background-color 0.3s ease-in-out;
-  background-color: transparent;
-}
-
-.navbar.scrolled {
-  background-color: var(--primary-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.navbar {
-  transition: background-color 0.3s ease-in-out;
-  background-color: var(--background-color); /* Light gray when at top */
+  background-color: var(--primary-color); /* Always primary color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Keep shadow for consistency */
 }
 
 .navbar.scrolled {
   background-color: #007bff; /* Blue when scrolled down */
 }
 
+.navbar-brand {
+  font-weight: bold;
+  color: white !important;
+}
+
 .navbar-brand img {
-  height: 40px; /* Set a fixed height for visibility */
-  width: auto; /* Maintain aspect ratio */
+  height: 40px;
+  mix-blend-mode: multiply;
 }
 
 .navbar-nav .nav-link {
@@ -31,7 +27,7 @@
 }
 
 .nav-link {
-  color: var(--text-dark-color) !important;
+  color: var(--text-light-color) !important; /* Light text for primary color navbar */
   font-weight: 500;
   margin: 0 10px;
 }
@@ -41,7 +37,7 @@
 }
 
 .navbar.scrolled .nav-link {
-  color: var(--text-light-color) !important;
+  color: var(--text-light-color) !important; /* Light text for primary color navbar */
 }
 
 .navbar.scrolled .nav-link:hover {

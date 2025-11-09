@@ -13,9 +13,9 @@ import { CommonModule } from '@angular/common';
 export class HomeComponent implements OnInit, OnDestroy {
   happyCustomerImages: string[] = [
     'assets/images/photos/happy_custmor.png',
-    'assets/images/photos/happy_custmore1.png',
-    'assets/images/photos/happy_custmore3.png',
-    'assets/images/photos/happy_custmore5.png'
+    'assets/images/photos/happy_custmore1.png'
+    // 'assets/images/photos/happy_custmore3.png',
+    // 'assets/images/photos/happy_custmore5.png'
   ];
   happyCustomerReviews: { text: string, author: string }[] = [
     { text: "Harshit Moving Solutions provided an excellent service. Our move was smooth and stress-free. Highly recommended!", author: "- Satisfied Client 1" },

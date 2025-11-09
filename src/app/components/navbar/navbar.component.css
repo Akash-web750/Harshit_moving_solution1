@@ -40,3 +40,17 @@
 .navbar .nav-links a:hover {
   color: #FF7043; /* Orange */
 }
+
+.btn-quote {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-quote:hover {
+  background-color: #0056b3;
+}
